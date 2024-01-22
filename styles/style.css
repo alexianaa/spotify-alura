@@ -1,0 +1,165 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 8px;
+    width: 315px;
+}
+
+.sidebar_navigation {
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 16px 0px 0px 16px;
+}
+
+.sidebar_navigation .logo {
+    background: #121212;
+    display: flex;
+    border-radius: 8px;
+    padding: 10px 0px 0px 10px;
+}
+
+.sidebar nav ul {
+    margin-top: 10px;
+    padding: 0 10px 10px 10px;
+}
+
+.sidebar nav ul li {
+    padding: 10px 0;
+}
+
+.sidebar nav ul li a {
+    color: #B3B3B3;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.sidebar nav ul li a:first-child {
+    font-size: 20px;
+}
+
+.titulo {
+    margin-left: 12px;
+    font-size: 16px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.biblioteca_navigation {
+    margin-top: 8px;
+    background-color: #121212;
+    border-radius: 8px;
+    height: 55vh;
+    flex-direction: column;
+}
+
+.biblioteca_navigation_top {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.biblioteca_navigation div header {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 8px 16px;
+    font-size: 16px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    color: #b3b3b3;
+}
+
+.biblioteca_navigation div header span {
+    padding: 10px;
+}
+
+.filtro {
+    display: flex;
+    align-items: center;
+    margin: 8px 16px;
+    color: #b3b3b3;
+    font-size: 14px;
+    gap: 8px;
+}
+
+.filtro a {
+    padding: 8px 10px;
+    cursor: pointer;
+    background-color: #1f1f1f;
+    border-radius: 30px;
+    line-height: 1;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+.biblioteca_navigation_middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #b3b3b3;
+    font-size: 12px;
+    padding: 8px 16px;
+}
+
+.biblioteca_navigation_middle div:first-child {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.biblioteca_navigation_middle div {
+    padding: 10px;
+}
+
+.biblioteca_navigation_middle div:first-child:hover {
+    background-color: #1f1f1f;
+    border-radius: 20px;
+}
+
+.biblioteca_navigation_bottom div:first-child {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+}
+
+.biblioteca_navigation_bottom:hover {
+    background-color: #1f1f1f;
+    border-radius: 15px;
+}
+
+.biblioteca_navigation_bottom img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.card div {
+    flex-direction: row;
+}
+
+.card div div {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+    align-items: center;
+}
+
+.card div div p {
+    color: #B3B3B3;
+    font-size: 14px;
+}
