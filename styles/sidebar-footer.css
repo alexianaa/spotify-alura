@@ -141,6 +141,7 @@ body {
     color: #b3b3b3;
     font-size: 12px;
     padding: 8px 16px;
+    width: 22.5em;
 }
 
 .biblioteca__search div {
@@ -162,25 +163,23 @@ body {
     font-size: 14px;
 }
 
-.biblioteca__playlists {
-    max-height: 200px;
-    overflow: scroll;
-    overflow-x: hidden;
+.biblioteca__content {
+    max-height: 240px;
+    overflow-y: hidden;
 }
 
-.biblioteca__playlists::-webkit-scrollbar {
+.biblioteca__content:hover {
+    overflow-y: scroll;
+}
+
+.biblioteca__content::-webkit-scrollbar {
     width: 10px;
     height: 20px;
 }
 
-.biblioteca__playlists::-webkit-scrollbar-thumb {
+.biblioteca__content::-webkit-scrollbar-thumb {
     background: #878787;
     transition: 2s;
-    visibility: hidden;
-}
-
-.biblioteca__playlists::-webkit-scrollbar-thumb:hover {
-    visibility: visible;
 }
 
 .biblioteca__playlists .card {
