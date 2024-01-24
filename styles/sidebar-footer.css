@@ -59,7 +59,7 @@ body {
     width: 80px;
 }
 
-.biblioteca_navigation {
+.biblioteca {
     margin-top: 8px;
     background-color: #121212;
     border-radius: 8px;
@@ -67,14 +67,14 @@ body {
     flex-direction: column;
 }
 
-.biblioteca_navigation_top {
+.biblioteca__navigation {
     border: 0;
     margin: 0;
     padding: 0;
     vertical-align: baseline;
 }
 
-.biblioteca_navigation div header {
+.biblioteca div header {
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -87,28 +87,28 @@ body {
     color: #b3b3b3;
 }
 
-.biblioteca_navigation .plus {
+.biblioteca div header div {
+    cursor: pointer;
+    transition: 1s;
+}
+
+.biblioteca div header div:hover {
+    color: #fff;
+}
+
+.biblioteca .plus {
     padding: 10px;
     transition: 1s;
     border-radius: 30px;
     cursor: pointer;
 }
 
-.biblioteca_navigation .plus:hover {
+.biblioteca .plus:hover {
     background-color: #1f1f1f;
     color: white;
 }
 
-.biblioteca_navigation div header div {
-    cursor: pointer;
-    transition: 1s;
-}
-
-.biblioteca_navigation div header div:hover {
-    color: #fff;
-}
-
-.biblioteca_navigation_top .filtro {
+.biblioteca__navigation .filtro {
     display: flex;
     align-items: center;
     margin: 8px 16px;
@@ -117,7 +117,7 @@ body {
     gap: 8px;
 }
 
-.biblioteca_navigation_top .filtro a {
+.biblioteca__navigation .filtro a {
     padding: 8px 10px;
     cursor: pointer;
     background-color: #1f1f1f;
@@ -130,11 +130,11 @@ body {
     transition: 1s;
 }
 
-.biblioteca_navigation_top .filtro a:hover {
+.biblioteca__navigation .filtro a:hover {
     background-color: #303030;
 }
 
-.biblioteca_navigation_middle {
+.biblioteca__search {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -143,64 +143,78 @@ body {
     padding: 8px 16px;
 }
 
-.biblioteca_navigation_middle div:first-child {
-    font-size: 14px;
+.biblioteca__search div {
+    padding: 10px;
     cursor: pointer;
 }
 
-.biblioteca_navigation_middle div:first-child:hover {
+.biblioteca__search div:first-child {
+    font-size: 14px;
+}
+
+.biblioteca__search div:first-child:hover {
     background-color: #1f1f1f;
     border-radius: 20px;
 }
 
-.biblioteca_navigation_middle div:last-child {
-    cursor: pointer;
-}
-
-.biblioteca_navigation_middle div:last-child:hover {
+.biblioteca__search div:last-child:hover {
     color: #fff;
     font-size: 14px;
 }
 
-.biblioteca_navigation_middle div {
-    padding: 10px;
+.biblioteca__playlists {
+    max-height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
-.biblioteca_navigation_bottom div:first-child {
+.biblioteca__playlists::-webkit-scrollbar {
+    width: 10px;
+    height: 20px;
+}
+
+.biblioteca__playlists::-webkit-scrollbar-thumb {
+    background: #878787;
+    transition: 2s;
+    visibility: hidden;
+}
+
+.biblioteca__playlists::-webkit-scrollbar-thumb:hover {
+    visibility: visible;
+}
+
+.biblioteca__playlists .card {
     display: flex;
     padding: 8px 16px;
     align-items: center;
+    margin: 5px;
+    cursor: pointer;
 }
 
-.biblioteca_navigation_bottom img {
+.biblioteca__playlists .card img {
     width: 50px;
     height: 50px;
     border-radius: 8px;
     margin-right: 10px;
 }
 
-.card {
-    margin: 5px;
-    cursor: pointer;
-}
-
-.card:hover {
+.biblioteca__playlists .card:hover {
     background-color: #1f1f1f;
     border-radius: 10px;
 }
 
-.card div {
+.biblioteca__playlists .card div {
     flex-direction: row;
 }
 
-.card div div {
+.biblioteca__playlists .card div div {
     display: flex;
     gap: 8px;
     margin-top: 8px;
     align-items: center;
 }
 
-.card div div p {
+.biblioteca__playlists .card div div p {
     color: #B3B3B3;
     font-size: 14px;
 }
