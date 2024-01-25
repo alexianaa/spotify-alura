@@ -1,7 +1,12 @@
 body {
     background-color: black;
     color: white;
-    font-family: var(--font-dm-sans)
+    font-family: var(--font-dm-sans);
+    overflow: auto;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .sidebar {
@@ -63,7 +68,7 @@ body {
     margin-top: 8px;
     background-color: #121212;
     border-radius: 8px;
-    height: 55vh;
+    height: 59vh;
     flex-direction: column;
 }
 
@@ -216,4 +221,39 @@ body {
 .biblioteca__playlists .card div div p {
     color: #B3B3B3;
     font-size: 14px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 8px;
+    width: 96vw;
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    cursor: pointer;
+    padding: 11px 24px 7px 15px;
+    background: linear-gradient(90deg,#af2896,#509bf5);
+    height: 60px;
+    align-items: center;
+    font-size: 16px;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.footer__content .footer__text div:first-child{
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer__content .free_subscribe{
+    padding: 16px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 30px;
 }
