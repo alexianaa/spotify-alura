@@ -154,12 +154,10 @@
 .offer__list-item {
     /* CODIGO COM JS CALCULANDO OS CARDS POR COLUNA */
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    /* define o modelo de layout do elemento como uma grade */
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 16px;
-    grid-gap: 32px;
-    /* não é usado mais */
-    margin: 0 auto;
+    grid-gap: 16px;
 }
 
 /* POSITION */
