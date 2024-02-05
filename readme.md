@@ -7,11 +7,14 @@
 
 ### Uso de um simulador de API com o json-server
 
+Para fazer buscas no site, clone o repositório e inicie o servidor.
+
+- baixar extensão live server no vscode e iniciar o servidor local
 - npm i json-server
 - json-server --watch api-artists/artists.json --port 3421
 
 > API aberta em http://localhost:3421/
 
-> Acesse o Site https://alexianaa.github.io/spotify-alura/
+## Acesse o Site https://alexianaa.github.io/spotify-alura/
 
 ![image](https://github.com/alexianaa/spotify-alura/assets/61877198/945b05da-61e3-42ab-9624-7611658ed270)
